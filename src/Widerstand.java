@@ -1,8 +1,9 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Widerstand {
     private double widerstand;
-    private double toleranz;
+    private double toleranz = 0;
     private WColor[] color;
     public double getToleranz(){
         return toleranz;
@@ -74,5 +75,14 @@ public class Widerstand {
             wTmp = wTmp + 1/w.widerstand;
         }
         return 1/wTmp;
+    }
+
+    @Override
+    public String toString() {
+        return "Widerstand{" +
+                "widerstand=" + widerstand +
+                ", toleranz=" + toleranz +
+                ", color=" + Arrays.toString(color).toString() +
+                '}';
     }
 }

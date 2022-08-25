@@ -11,14 +11,14 @@ public class Main {
         lstWiderstaende.add(new Widerstand(50));
         lstWiderstaende.add(new Widerstand(100));
         lstWiderstaende.add(new Widerstand(150));
-        lstWiderstaende.add(new Widerstand(1500000));
 
         lstWiderstaendeOut(lstWiderstaende);
-        Widerstand xy = new Widerstand(WColor.braun, WColor.schwarz, WColor.orange, WColor.silber);
+        Widerstand xy = new Widerstand(WColor.BROWN, WColor.BLACK, WColor.ORANGE, WColor.SILVER);
         System.out.println(xy.getWiderstand());
         System.out.println(xy.getToleranz() + " %");
+        System.out.println(xy.toString());;
 
-        xy = new Widerstand(WColor.gelb, WColor.violett, WColor.grün, WColor.rot, WColor.braun);
+        xy = new Widerstand(WColor.YELLOW, WColor.PURPLE, WColor.GREEN, WColor.RED, WColor.BROWN);
         System.out.println(xy.getWiderstand());
         System.out.println(xy.getToleranz() + " %");
 
